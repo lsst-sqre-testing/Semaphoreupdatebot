@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: "semaphoreupdatebot"
+  labels:
+    app.kubernetes.io/name: "Semaphoreupdatebot"
+data:
+  # These configurations are injected as environment variables into the
+  # app container.
+  SAFIR_NAME: "semaphoreupdatebot"
+  SAFIR_PROFILE: "production"
+  SAFIR_LOGGER: "semaphoreupdatebot"
+  SAFIR_LOG_LEVEL: "INFO"
